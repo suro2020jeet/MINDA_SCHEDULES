@@ -1,0 +1,20 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZGW_MATERIAL_FORECAST_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="MaterialForecast" m:HasStream="true" sap:content-version="1">
+				<Key><PropertyRef Name="Vendor"/><PropertyRef Name="Material"/><PropertyRef Name="Plant"/><PropertyRef Name="SupplyingPlant"/><PropertyRef Name="CurrentDate"/><PropertyRef Name="Daily"/><PropertyRef Name="Weekly"/><PropertyRef Name="monthly"/><PropertyRef Name="ToCurrentDate"/></Key><Property Name="Vendor" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Vendor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Material" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Plant" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Plant" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="SupplyingPlant" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="supplyingPlant"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="pdf" Type="Edm.Binary" sap:unicode="false" sap:label="Character 100" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="CurrentDate" Type="Edm.DateTime" Nullable="false" Precision="8" sap:unicode="false" sap:label="date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Daily" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Weekly" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="monthly" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ToCurrentDate" Type="Edm.DateTime" Nullable="false" Precision="8" sap:unicode="false" sap:label="Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZGW_MATERIAL_FORECAST_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="MaterialForecastSet" EntityType="ZGW_MATERIAL_FORECAST_SRV.MaterialForecast" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZGW_MATERIAL_FORECAST_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZGW_MATERIAL_FORECAST_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
